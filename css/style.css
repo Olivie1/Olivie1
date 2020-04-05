@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+
+.news {
+    background: url('../img/news-bg-shadow.png'), url('../img/museum.jpg');
+    min-height: 397px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 47%;
+    padding-top: 155px;
+}
+
+.news h2 {
+    font-weight: bold;
+    width: 520px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lifehacks {
+    background-color: #000;
+    min-height: 776px;
+    padding-top: 97px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 29px;
+}
+
+.green-text {
+    color: #00B25C;
+}
+
+.subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 592px;
+    margin-bottom: 129px;
+}
+
+.lifehacks .text-center {
+    display: flex;
+    justify-content: center;
+}
+
+.lifehacks .lifehack-item p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+
+.lifehacks .lifehack-item {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lifehacks .lifehack-item img {
+    margin-bottom: 50px;
+}
+
+.lifehacks .lifehack-item a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.lifehacks button {
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 44px;
+}
+
+.lifehacks button:hover {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.lifehacks .btn-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 82px;
+}
+
+.lifehacks button:active {
+    background-color: transparent !important;
+}
+
+.places {
+    min-height: 1506px;
+    background-color: #000;
+    padding-top: 157px;
+}
+
+.places .pictures-480, 
+.pictures-840 {
+    display: none;
+}
+
+.places h2 {
+    /* width: 713px; */
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+.places .subtitle {
+    text-align: left;
+    margin-bottom: 0;
+
+}
+
+.places .picture-block {
+    display: flex;
+    flex-direction: column;
+} 
+
+.places .picture-block img {
+    width: inherit;
+    height: auto;
+}
+
+.places .picture-block:nth-child(2) img:first-child {
+    margin-bottom: 24px; 
+}
+
+.places .picture-block:nth-child(3) img:first-child {
+    margin-bottom: 22px;
+}
+
+.places .picture-block:first-child img{
+    margin-top: 265px;
+}
+
+.places .picture-block:nth-child(2) {
+    margin-top: 252px;
+}
+
+/* footer */
+
+footer{
+	background: url(../img/footer_img.jpg);
+	display: flex;
+	justify-content: space-between;
+}
+
+footer p{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+}
+
+footer p span{
+	color: #00B25C;
+	font-size: 20px;
+	font-weight: bolder;
+	margin-left: 10px;
+}
+
+footer p span:hover{
+	text-decoration: underline;
+	transition: 0.5s;
+}
+
+footer p span:not(:hover){
+	transition: 0.5s;
+}
+
+.smth-info{
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+
+.smth-info p{
+	line-height: 20px;
+}
+
+.networks i{
+	color: #FFFFFF;
+	font-size: 40px;
+	margin: 40px 15px;
+}
+
+.networks i:hover{
+	transition: 0.1s;
+	color: #00B25C;
+}
+
+.networks i:not(:hover){
+	transition: 0.1s;
+}
+
+footer .container{
+	padding-top: 200px;
+}
+
+.links a{
+	display: block;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 40px;
+	color: #FFFFFF;
+}
+
+footer h3{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #FFFFFF;
+	margin-bottom: 50px;
+	margin-top: 45px;
+}
+
+footer h2{
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+/* 480px adaptive */
+
+@media (max-width: 480px) {
+    .news h2{
+        font-size: 16px;
+        width: inherit;
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+
+    .news {
+        background-size: cover, 250%;
+        padding-top: 145px;
+        background-position-y: 67%;
+        background-position-x: 50%;
+    }
+
+    .lifehacks {
+        padding-top: 80px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        width: auto;
+        margin-bottom: 129px;
+        
+    }
+
+    .lifehacks .lifehack-item img {
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .lifehack-block .lifehack-item p {
+        width: auto;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .lifehack-block .lifehack-item {
+        margin-bottom: 50px;
+    }
+
+    .lifehacks .btn-center {
+        margin-top: 0;
+    }
+
+    .places h2 {
+        width: auto;
+    }
+
+    .places .pictures{
+        display: none;
+    }
+
+    .places .subtitle {
+        margin-bottom: 60px;
+    }
+
+    .places .pictures-480 {
+        display: block;
+    }
+
+    .places .pictures-480 img {
+        width: inherit;
+        margin-bottom: 25px;
+    }
+
+    .places .pictures-480 img:last-child {
+        margin-bottom: 0;
+    }
+
+    footer {
+        background-size: cover;
+        background-position-x: 40%;
+
+    }
+
+    footer .empty {
+        display: none;
+    }
+
+    footer .smth-info {
+        margin-top: 50px;
+    }
+
+    footer .smth-info p {
+        line-height: 10px;
+        text-align: center;
+    }
+
+    footer .logo {
+        display: none;
+    }
+
+    footer .email span {
+        display: inline-block;
+        margin-left: 0;
+    }
+}
+
+/* 840px adaptive */
+
+@media (min-width: 479px) and (max-width: 840px) {
+    .news h2{
+        font-size: 16px;
+        /* width: auto; */
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+
+    .news {
+        background-size: cover, 250%;
+        padding-top: 145px;
+        background-position-y: 67%;
+        background-position-x: 50%;
+    }
+
+    .lifehacks .subtitle {
+        width: auto;
+    }
+
+    .places .pictures-480 {
+        display: none;
+    }
+    .places .container .picture-block img {
+        margin: 0;
+    }
+
+    .places .pictures {
+        display: none;
+    }
+
+    .places .subtitle {
+        margin-left: 15px;
+    }
+
+    .places .pictures-840 {
+        display: flex;
+    }
+
+    .places .container .picture-block{
+        margin-top: 194px;
+    }
+
+    .places .picture-block:first-child img:last-child {
+        margin-top: 20px;
+    }
+
+    .places .picture-block:last-child {
+        margin-top: 70px;
+    }
+
+    .places .picture-block:last-child img {
+        margin-top: 20px;
+    }
+
+    .places .picture-block:last-child img:first-child {
+        margin-bottom: 0;
+    }
+
+    footer .empty {
+        display: none;
+    }
+
+    footer h3 {
+        font-size: 22px;
+    }
+
+    footer {
+        background-size: cover;
+        background-position-x: 40%;
+
+    }
+}
